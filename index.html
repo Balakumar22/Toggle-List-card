@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle List & Card Grid View Using Js,ES5 & ES6</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+  <body onload="displayDetails()">
+    <div class="container table-close">
+      <div class="icon-container">
+        <ion-icon class="card-icon" name="apps-sharp"></ion-icon>
+        <ion-icon class="list-icon active" name="list"></ion-icon>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <ion-icon
+            class="close-icon"
+            name="close"
+            onclick="deleteCard(1)"
+          ></ion-icon>
+          <div class="card-header">
+            <img class="${imgClass}" src="img/male.png" alt="male icon" />
+          </div>
+          <div class="card-body">
+            <p class="name">Name : Sample</p>
+            <p class="id">ID : 1</p>
+            <p class="skills">
+              Skills :
+              <input type="text" id="skills1" value="Sample Skills" disabled />
+            </p>
+            <p class="project">Project : Sample Project</p>
+            <p class="hcm">HCM : Sample HCM</p>
+          </div>
+          <div class="card-footer">
+            <button id="edit1" class="btn active" onclick="cardEdit(1)">
+              Edit
+            </button>
+            <button id="save1" class="btn" onclick="cardSave(1)">Save</button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-container"></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+ <body>
+    <div class="container">
+      <div class="card-section">
+        <ion-icon class="card-icon" name="apps"></ion-icon>
+        <div class="card-container">
+          <div class="card">
+          <ion-icon class="close-icon" name="close"></ion-icon>
+          <div class="card-header">
+            <img class="card-img" src="male.png" alt="Male Icon" />
+          </div>
+          <div class="card-body">
+            <p class="name">
+              Name : <input type="text" id="name1" value="John" disabled />
+            </p>
+            <p class="id">
+              ID : <input type="number" id="id1" value="123456" disabled />
+            </p>
+            <p class="skills">
+              Skills :
+              <input
+                type="text"
+                id="skills1"
+                value="ReactJS, Angular, JS"
+                disabled
+              />
+            </p>
+            <p class="project">
+              Project :
+              <input
+                type="text"
+                id="project1"
+                value="Cognizant Internal"
+                disabled
+              />
+            </p>
+            <p class="hcm">
+              HCM : <input type="text" id="hcm1" value="Alex" disabled />
+            </p>
+          </div>
+          <div class="card-footer">
+            <button id="edit1" class="btn active" onclick="cardEdit(1)">
+              Edit
+            </button>
+            <button id="save1" class="btn" onclick="cardSave(1)">Save</button>
+          </div>
+        </div>
+        <div class="card">
+          <ion-icon class="close-icon" name="close"></ion-icon>
+          <div class="card-header">
+            <img class="card-img" src="male.png" alt="Male Icon" />
+          </div>
+          <div class="card-body">
+            <p class="name">
+              Name : <input type="text" id="name1" value="John" disabled />
+            </p>
+            <p class="id">
+              ID : <input type="number" id="id1" value="123456" disabled />
+            </p>
+            <p class="skills">
+              Skills :
+              <input
+                type="text"
+                id="skills1"
+                value="ReactJS, Angular, JS"
+                disabled
+              />
+            </p>
+            <p class="project">
+              Project :
+              <input
+                type="text"
+                id="project1"
+                value="Cognizant Internal"
+                disabled
+              />
+            </p>
+            <p class="hcm">
+              HCM : <input type="text" id="hcm1" value="Alex" disabled />
+            </p>
+          </div>
+          <div class="card-footer">
+            <button id="edit1" class="btn active" onclick="cardEdit(1)">
+              Edit
+            </button>
+            <button id="save1" class="btn" onclick="cardSave(1)">Save</button>
+          </div>
+        </div>
+        <div class="card">
+          <ion-icon class="close-icon" name="close"></ion-icon>
+          <div class="card-header">
+            <img class="card-img" src="male.png" alt="Male Icon" />
+          </div>
+          <div class="card-body">
+            <p class="name">
+              Name : <input type="text" id="name1" value="John" disabled />
+            </p>
+            <p class="id">
+              ID : <input type="number" id="id1" value="123456" disabled />
+            </p>
+            <p class="skills">
+              Skills :
+              <input
+                type="text"
+                id="skills1"
+                value="ReactJS, Angular, JS"
+                disabled
+              />
+            </p>
+            <p class="project">
+              Project :
+              <input
+                type="text"
+                id="project1"
+                value="Cognizant Internal"
+                disabled
+              />
+            </p>
+            <p class="hcm">
+              HCM : <input type="text" id="hcm1" value="Alex" disabled />
+            </p>
+          </div>
+          <div class="card-footer">
+            <button id="edit1" class="btn active" onclick="cardEdit(1)">
+              Edit
+            </button>
+            <button id="save1" class="btn" onclick="cardSave(1)">Save</button>
+          </div>
+        </div>
+        <div class="card">
+          <ion-icon class="close-icon" name="close"></ion-icon>
+          <div class="card-header">
+            <img class="card-img" src="male.png" alt="Male Icon" />
+          </div>
+          <div class="card-body">
+            <p class="name">
+              Name : <input type="text" id="name1" value="John" disabled />
+            </p>
+            <p class="id">
+              ID : <input type="number" id="id1" value="123456" disabled />
+            </p>
+            <p class="skills">
+              Skills :
+              <input
+                type="text"
+                id="skills1"
+                value="ReactJS, Angular, JS"
+                disabled
+              />
+            </p>
+            <p class="project">
+              Project :
+              <input
+                type="text"
+                id="project1"
+                value="Cognizant Internal"
+                disabled
+              />
+            </p>
+            <p class="hcm">
+              HCM : <input type="text" id="hcm1" value="Alex" disabled />
+            </p>
+          </div>
+          <div class="card-footer">
+            <button id="edit1" class="btn active" onclick="cardEdit(1)">
+              Edit
+            </button>
+            <button id="save1" class="btn" onclick="cardSave(1)">Save</button>
+          </div>
+        </div>
+        <div class="card">
+          <ion-icon class="close-icon" name="close"></ion-icon>
+          <div class="card-header">
+            <img class="card-img" src="male.png" alt="Male Icon" />
+          </div>
+          <div class="card-body">
+            <p class="name">
+              Name : <input type="text" id="name1" value="John" disabled />
+            </p>
+            <p class="id">
+              ID : <input type="number" id="id1" value="123456" disabled />
+            </p>
+            <p class="skills">
+              Skills :
+              <input
+                type="text"
+                id="skills1"
+                value="ReactJS, Angular, JS"
+                disabled
+              />
+            </p>
+            <p class="project">
+              Project :
+              <input
+                type="text"
+                id="project1"
+                value="Cognizant Internal"
+                disabled
+              />
+            </p>
+            <p class="hcm">
+              HCM : <input type="text" id="hcm1" value="Alex" disabled />
+            </p>
+          </div>
+          <div class="card-footer">
+            <button id="edit1" class="btn active" onclick="cardEdit(1)">
+              Edit
+            </button>
+            <button id="save1" class="btn" onclick="cardSave(1)">Save</button>
+          </div>
+        </div>
+      </div>
+      <div class="table-section">
+        <ion-icon class="list-icon" name="list"></ion-icon>
+        <div class="grid-container">
+          <div class="row table-header">
+            <p>Name</p>
+            <p>ID</p>
+            <p>Skills</p>
+            <p>Project</p>
+            <p>HCM</p>
+            <p>Operation</p>
+          </div>
+          <div class="row">
+            <p>Balakumar A N</p>
+            <p>2129144</p>
+            <p>ReactJS,NodeJs</p>
+            <p>Cognizant Internal</p>
+            <p>Puneet</p>
+            <p>Button</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+ -->

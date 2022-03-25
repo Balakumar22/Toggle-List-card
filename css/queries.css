@@ -1,0 +1,186 @@
+/* 1200PX (SMALL DESKTOP) */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  /* .container {
+    padding: 6rem;
+  }*/
+  .card-container {
+    column-gap: 4rem;
+    row-gap: 4rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-body,
+  input {
+    font-size: 1.8rem;
+  }
+
+  .grid-container {
+    row-gap: 0.4rem;
+  }
+
+  .row {
+    grid-template-columns: 1.5fr repeat(5, 1fr);
+    column-gap: 0.4rem;
+  }
+
+  .row p {
+    padding: 1rem 1rem;
+    font-size: 2rem;
+  }
+}
+
+/* 944PX (TABLETS) */
+
+@media (max-width: 59em) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .container {
+    padding: 6rem 3rem;
+  }
+
+  .icon-container {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .card-container,
+  .grid-container {
+    margin-top: 6rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.8rem;
+    row-gap: 4.8rem;
+  }
+
+  .card-header {
+    margin-bottom: 2.4rem;
+  }
+
+  .row p,
+  .row input {
+    font-size: 1.6rem;
+  }
+}
+
+/* 704PX (SMALL TABLETS) */
+
+@media (max-width: 44em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    padding: 4.8rem 2.4rem;
+  }
+
+  .card {
+    padding: 1.2rem 0.6rem;
+  }
+
+  .card-body {
+    padding-left: 1.2rem;
+    font-size: 1.6rem;
+  }
+
+  .grid-container {
+    row-gap: 0.3rem;
+  }
+
+  .row {
+    column-gap: 0.3rem;
+  }
+
+  .row p,
+  .row input {
+    padding: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .edit-icon,
+  .save-icon,
+  .delete-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+}
+
+/* 544PX (PHONES) */
+@media (max-width: 34em) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .container {
+    padding: 2.4rem 1.2rem;
+  }
+
+  .icon-container {
+    right: 0.8rem;
+  }
+
+  .card-icon,
+  .list-icon {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 80%;
+    justify-self: center;
+    padding: 1.2rem 0.6rem;
+  }
+
+  .grid-container {
+    row-gap: 0.2rem;
+  }
+
+  .row {
+    column-gap: 0.2rem;
+  }
+
+  .row p,
+  .row input {
+    padding: 0.3rem;
+    font-size: 1rem;
+  }
+
+  .row:not(:first-child) p:last-child {
+    gap: 1.2rem;
+  }
+
+  .edit-icon,
+  .save-icon {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+
+  .row:not(:first-child) p:last-child .delete-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+}
+
+@media (max-width: 24em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

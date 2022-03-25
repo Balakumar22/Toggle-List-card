@@ -1,0 +1,164 @@
+{
+  "details": [
+    {
+      "id": 2129144,
+      "Name": "Balakumar A N",
+      "Skills": "ReactJS,AngularJS,NodeJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Puneet",
+      "gender": "M"
+    },
+    {
+      "id": 2122007,
+      "Name": "Padma Priya M",
+      "Skills": "Java,Spring",
+      "Project": "Cognizant Internal",
+      "HCM": "Narayanan",
+      "gender": "F"
+    },
+    {
+      "id": 2000145,
+      "Name": "Arunkumar A N",
+      "Skills": "ReactJS,NodeJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Puneet",
+      "gender": "M"
+    },
+    {
+      "id": 2122008,
+      "Name": "Kavitha Nagarajan",
+      "Skills": "ReactJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Neha",
+      "gender": "F"
+    },
+    {
+      "id": 2121133,
+      "Name": "Vishwanath B",
+      "Skills": "Angular,PHP",
+      "Project": "Cognizant Internal",
+      "HCM": "Puneet",
+      "gender": "M"
+    },
+    {
+      "id": 2122009,
+      "Name": "Divya Barathi S",
+      "Skills": "Angular",
+      "Project": "Cognizant Internal",
+      "HCM": "Puneet",
+      "gender": "F"
+    },
+    {
+      "id": 1810200,
+      "Name": "Arjun S",
+      "Skills": "NodeJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Neha",
+      "gender": "M"
+    },
+    {
+      "id": 2122010,
+      "Name": "Kannamma B",
+      "Skills": "ReactJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Narayanan",
+      "gender": "F"
+    },
+    {
+      "id": 2122001,
+      "Name": "Nandhakumar G",
+      "Skills": "PHP",
+      "Project": "Cognizant Internal",
+      "HCM": "Narayanan",
+      "gender": "M"
+    },
+    {
+      "id": 2122011,
+      "Name": "Pooja Manivannan",
+      "Skills": "NodeJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Puneet",
+      "gender": "F"
+    },
+    {
+      "id": 2122002,
+      "Name": "Vishnu C",
+      "Skills": "Django",
+      "Project": "Cognizant Internal",
+      "HCM": "Puneet",
+      "gender": "M"
+    },
+    {
+      "id": 2122012,
+      "Name": "Ilakkiya Senthil",
+      "Skills": "ReactJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Puneet",
+      "gender": "F"
+    },
+    {
+      "id": 2122003,
+      "Name": "Varadharajan M",
+      "Skills": "Java",
+      "Project": "Cognizant Internal",
+      "HCM": "Puneet",
+      "gender": "M"
+    },
+    {
+      "id": 2122013,
+      "Name": "Pavithra S",
+      "Skills": "Angular",
+      "Project": "Cognizant Internal",
+      "HCM": "Neha",
+      "gender": "F"
+    },
+    {
+      "id": 2122004,
+      "Name": "Jeevithan S",
+      "Skills": "VueJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Puneet",
+      "gender": "M"
+    },
+    {
+      "id": 2122014,
+      "Name": "Vishnu Priya K",
+      "Skills": "ReactJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Narayanan",
+      "gender": "F"
+    },
+    {
+      "id": 2122005,
+      "Name": "Jaideep Kaushik",
+      "Skills": "ReactJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Neha",
+      "gender": "M"
+    },
+    {
+      "id": 2122015,
+      "Name": "Ashwini Patel",
+      "Skills": "VueJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Puneet",
+      "gender": "F"
+    },
+    {
+      "id": 2122006,
+      "Name": "Akilesh S",
+      "Skills": "Python",
+      "Project": "Cognizant Internal",
+      "HCM": "Puneet",
+      "gender": "M"
+    },
+    {
+      "id": 212016,
+      "Name": "Mirdhula Ramkumar",
+      "Skills": "ReactJS",
+      "Project": "Cognizant Internal",
+      "HCM": "Neha",
+      "gender": "F"
+    }
+  ]
+}
